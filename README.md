@@ -18,4 +18,5 @@ To view the project locally on your machine, follow these steps:
    - Clone the repository or download the ZIP file from the provided link.
 
    ```bash
+
    git clone <repository-url>
