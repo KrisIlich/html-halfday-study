@@ -1,0 +1,245 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.backgroundWrapper {
+    background:url('images/hero-img.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: relative;
+    z-index: 1;
+    padding: 20px 30px;
+    color: #e2e2e3;
+    box-sizing: border-box;    
+    margin-bottom: 225px;
+}
+
+.header img {
+    height: 70px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.navLinks a {
+    justify-content:center;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight:900;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+}
+
+.navLinks a:hover {
+    color: #ffe200;
+}
+
+.searchBar {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 13px 25px;
+    border-radius: 8px;
+    border:none !important;
+    width: 130px;
+    height: 12px;
+}
+
+.searchBar::placeholder {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.mainContent {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    display: flex-start;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 0px;
+}
+
+.mainContent img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: flex;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.overlayText h1 {
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    font-weight: 900;
+    font-size: 142px;
+    letter-spacing: 1.9px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.overlayText p {
+    font-family: 'Inter', sans-serif;
+    color: #ffe200;
+    width: 100%;
+    font-weight: 900;
+    font-size: 26px;
+    letter-spacing: 5px;
+    margin: 0 0 -20px 0;
+    padding: 0;
+    line-height: 5%;
+}
+
+.footerAlert {
+    position: ab;
+    bottom: 0;
+    background-color: #ffffff;
+    color: #000;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+    scale: 95%;
+    margin-bottom: 20px;
+}
+
+.footerLogo {
+    background:url('images/ninja-star.png');
+    background-size: cover;
+    height: 40px; 
+    margin-right: 10px;
+}
+
+.footerAlert p {
+    flex: 1; 
+    margin: 0 5px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: .01;
+    font-weight: 900;
+}
+
+.footerAlert div {
+    display: flex;
+    align-items: center;
+}
+
+.footerAlert div::before {
+    content: "";
+    width: 1px;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.175); 
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.footerAlert button {
+    padding: 1px 1px;
+    width: 65px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px; 
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 4px;
+    margin-right: -1px;
+}
+
+.footerAlert .yellowButton {
+    background-color: #ffe200;
+}
+
+.footerAlert .whiteButton {
+    background-color: #fff;
+    border: .5px solid rgb(146, 146, 146, .3);
+
+    
+}
+
+.footerAlert .yellowButton:hover{
+    background-color: #efd300;
+}
+.footerAlert .whiteButton:hover{
+    background-color: #e1e1e1;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 90px;
+    }
+
+    .header img {
+        height: 60px;
+        margin: 10px 0 30px 0;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 30px;
+        margin: 10px 0;
+    }
+
+    .navLinks a {
+        font-size: 16px;
+    }
+
+    .searchBar {
+        width: 100%;
+        max-width: 300px;
+        margin: 30px 0;
+    }
+
+    .overlayText p {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .header img {
+        height: 50px;
+    }
+
+    .navLinks a {
+        font-size: 14px;
+    }
+
+    .searchBar {
+        width: 100%;
+        max-width: 250px;
+    }
+}
